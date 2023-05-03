@@ -1,0 +1,328 @@
+@charset "UTF-8"
+
+/* == == == == == == == == == == == == == == == == == == ==
+COLORS
+	red: rgb(77, 20, 40);
+	maroon: #312327 or rgb(49,35,39);
+	navy: #132125 OR rgb(19, 33, 37);
+	tan: #dcd9c5;
+	
+	/new colors
+	maroon: #26000; or 220000
+	cream: #FFFCE8;
+	charcoal: #1c1c1c; or 232323
+	black: #000000;
+== == == == == == == == == == == == == == == == == == == */
+
+/* == == == == == == == == == == == == == == == == == == ==
+GENERAL
+== == == == == == == == == == == == == == == == == == == */
+@font-face {
+    font-family: BebasNeue;
+    src: url("font/BebasNeue.otf") format("opentype");
+}
+
+body {
+	background-color: #260000;
+}
+
+#wrapper {
+	max-width: 1100px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@keyframes anim1 {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+/* == == == == == == == == == == == == == == == == == == ==
+NAV
+== == == == == == == == == == == == == == == == == == == */
+#nav {
+	height: 50px;
+	background-color: #1c1c1c;
+}
+
+#navLeft {
+	float: left;
+}
+
+#navLeft img {
+	margin-right: -10px;
+}
+
+#navLeft a {
+	font-family: 'BebasNeue', sans-serif;
+	font-weight: bold;
+	line-height: 50px;
+	padding-left: 15px;
+	color: #dcd9c5;
+}
+
+#navRight {
+	float: right;
+	padding-right: 30px;
+}
+
+#navRight a {
+	padding-top: 17px;
+	color: #fffce8;
+}
+
+.desktopDropdown {
+	border-color: #fffce8;
+	background-color: #1c1c1c;
+}
+
+.desktopDropdown a:hover {
+	background-color: #260000;
+}
+
+#mobileNav {
+	display: none;
+}
+
+#centerPiece {
+	background-image: url("../links/Background Texture 1.jpg") !important;
+	background-color: #fffce8;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.heroBox {
+	background-color: rgba(28, 28, 28, .7);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-top: 40px;
+	max-width: 550px;
+	animation-name: anim1;
+	animation-duration: 1s;
+}
+
+
+.headShot {
+	border-style: solid;
+	border-width: 8px;
+	border-radius: 35%;
+	border-color: #fffce8;
+	max-height: 450px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: -20px;
+	margin-top: 20px
+}
+
+.heroBox h1 {
+	font-family: 'Oswald', 'Impact', sans-serif;
+	padding: 30px 0px 20px 0px;
+	color: #fffce8;
+}
+
+#arrow {
+	background-color: rgba(28, 28, 28, .7);
+	display: block;
+	margin: 40px auto 0px auto;
+	max-width: 160px;
+	height: 100px;
+
+	animation-name: anim1;
+	animation-duration: 2s;
+}
+
+#arrow img {
+	display: block;
+	max-width: 60px;
+	margin: 40px auto 0px auto;
+	padding-top: 15px;
+}
+
+/* == == == == == == == == == == == == == == == == == == ==
+MAIN
+== == == == == == == == == == == == == == == == == == == */
+#introHeaderBox {
+	background-color: #260000;
+	border-style: double;
+	border-width: 0px 0px 0px 32px;
+	border-color: #fffce8;
+}
+
+#introHeaderBox h3 {
+	font-family: 'Oswald', 'Impact', sans-serif;
+	color: #dcd9c5;
+	padding: 10px 21px;
+	margin-left: -10px;
+}
+
+#introductionBox {
+	height: auto;
+	background-color: #1c1c1c;
+	padding-bottom: 2px;
+}
+
+#introductionBox p {
+	background-color: #1c1c1c;
+	color: #fffce8;
+	font-family: 'Helvetica', serif;
+	font-size: 18px;
+	margin: 15px;
+	padding: 15px;
+	height: auto;
+}
+
+#bannerBox {
+	background-image: url("../links/wood_back_OriginalSize.jpg") !important;
+	background-size: 98%;
+}
+
+#bannerBox img {
+	margin: 15px 0px 15px 15px;
+	max-width: 250px;
+	max-height: 250px;
+}
+
+.bannerButton {
+	float: right;
+	margin-right: 20px;
+	margin-top: 115px;
+}
+
+#mobileBannerBox {
+	display: none;
+}
+
+/* == == == == == == == == == == == == == == == == == == ==
+FOOTER
+== == == == == == == == == == == == == == == == == == == */
+#footer {
+	background-color: #1c1c1c;
+}
+
+.contactBox {
+	padding: 20px 0px 10px 0px;
+	width: auto;
+	color: #fffce8;
+}
+
+.contactBox h5 {
+	font-family: "Helvetica", sans-serif;
+}
+
+.mobileContactBox {
+	display: none;
+}
+
+/*.socialMediaBox img {
+	float: right;
+	max-width: 50px;
+	margin: 9px 15px 0px 0px;
+}
+
+.socialMediaBox img:hover {
+	opacity: .7;
+}
+
+.mobileSocialMediaBox {
+	display: none;
+}*/
+
+/* == == == == == == == == == == == == == == == == == == ==
+BREAKPOINTS
+== == == == == == == == == == == == == == == == == == == */
+@media only screen and (max-width: 639px) {
+	/*For mobile nav*/
+	#desktopNav {
+		display: none;
+	}
+
+	#mobileNav {
+		display: block;
+	}
+
+	#mobileNav button {
+		padding-bottom: 2px;
+	}
+
+	.title-bar {
+		background-color: #1c1c1c;
+		height: 50px;
+	}
+
+	.title-bar button {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.mobileDropdown a {
+		color: #260000;
+	}
+
+	.mobileDropdown a:hover {
+		background-color: #260000;
+		color: #fffce8;
+	}
+	/*end for mobile nav*/
+
+	.contactBox {									/*swapping desktop for mobile footer content*/
+		display: none;
+	}
+
+	.mobileContactBox {
+		display: block;
+		padding: 15px 0px 4px 15px;
+		color: #1c1c1c;
+	}
+
+	.mobileContactBox h5 {
+		font-family: "Helvetica", sans-serif;
+		font-size: 16px;
+		color: #fffce8;
+	}
+
+	.socialMediaBox {
+		display: none;
+	}
+
+	.mobileSocialMediaBox {
+		display: inline-block;
+	}
+
+	.mobileSocialMediaBox img {
+		max-width: 50px;
+		margin: 0px 7px 12px 0px;
+	}
+
+	.mobileSocialMediaBox img:hover {
+		opacity: .7;
+	}
+	/*end desktop mobile footer formatting*/
+}
+
+@media only screen and (max-width: 500px) {
+	#bannerBox {
+		display: none;
+	}
+
+	#mobileBannerBox {
+		display: block;
+		background-image: url("../links/wood_back_QuickFacts_Mobile.jpg") !important;
+		background-position: center;
+	}
+
+	.mobileBannerImage {
+		margin-top: 20px;
+		margin-left: 15px;
+		max-width: 250px;
+		max-height: 250px;
+	}
+
+	.mobileBannerDownload {
+		margin-top: -75px;
+	}
+}

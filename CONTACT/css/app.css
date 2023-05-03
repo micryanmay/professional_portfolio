@@ -1,0 +1,342 @@
+@charset "UTF-8"
+
+/* == == == == == == == == == == == == == == == == == == ==
+COLORS
+	red: rgb(77, 20, 40);
+	maroon: #312327;
+	navy: #132125 OR rgb(19, 33, 37);
+	tan: #dcd9c5;
+	
+	/new colors
+	maroon: #26000; or 220000
+	cream: #FFFCE8;
+	charcoal: #1c1c1c; or 232323
+	black: #000000;
+== == == == == == == == == == == == == == == == == == == */
+
+/* == == == == == == == == == == == == == == == == == == ==
+GENERAL
+== == == == == == == == == == == == == == == == == == == */
+@font-face {
+    font-family: BebasNeue;
+    src: url("font/BebasNeue.otf") format("opentype");
+}
+
+body {
+	background-color: #260000;
+}
+
+#wrapper {
+	max-width: 1100px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* == == == == == == == == == == == == == == == == == == ==
+NAV
+== == == == == == == == == == == == == == == == == == == */
+#topBox {
+	height: auto;
+	padding-bottom: 30px;
+	background-color: #FFFCE8;
+}
+
+#nav {
+	height: 50px;
+	background-color: #1c1c1c;
+}
+
+#navLeft {
+	float: left;
+}
+
+#navLeft img {
+	margin-right: -10px;
+}
+
+#navLeft a {
+	font-family: 'BebasNeue', sans-serif;
+	font-weight: bold;
+	line-height: 50px;
+	padding-left: 15px;
+}
+
+#navRight {
+	float: right;
+	padding-right: 30px;
+}
+
+#navRight a {
+	padding-top: 17px;
+	color: #FFFCE8;
+}
+
+.desktopDropdown {
+	border-color: #FFFCE8;
+	background-color: #1c1c1c;
+}
+
+.desktopDropdown a:hover {
+	background-color: #260000;
+}
+
+#mobileNav {
+	display: none;
+}
+
+#desktopCenterPiece {
+	margin: 0px 20px;
+}
+
+.photoBox {
+	margin-top: 25px;
+	margin-left: 25px;
+}
+
+.photoBox img {
+	border-style: solid;
+	min-width: 300px;
+	border-color: #1c1c1c;
+	border-radius: 50%;
+	border-width: 5px;
+}
+
+.contactBoxHolder {
+	margin-top: 25px;
+	background-image: url("../links/wood_back_QuickFacts.jpg") !important;
+}
+
+#contactBox {
+	background-color: rgba(28, 28, 28, .8);
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height: 92%;
+}
+
+#contactBox h1 {
+	font-family: "Oswald", "Impact", sans-serif;
+	color: #FFFCE8;
+	padding-left: 20px;
+	padding-bottom: 4px;
+	padding-top: 7px;
+}
+
+.infoHolder {
+	display: inline;
+	margin-left: 20px;
+}
+
+.infoHolder h4 {
+	font-family: "Helvetica", sans-serif;
+	color: #FFFCE8;
+	margin-left: 20px;
+	padding-bottom: 25px;
+	display: inline-block;
+}
+
+.infoHolder2 {
+	display: inline;
+	margin-left: 10px;
+}
+
+.infoHolder2 h4 {
+	font-family: "Helvetica", sans-serif;
+	color: #FFFCE8;
+	margin-left: 12px;
+	padding-bottom: 25px;
+	display: inline-block;
+}
+
+.infoHolder2 img {
+	padding-left: 2px;
+}
+
+.infoHolder2:hover {
+	opacity: .5;
+}
+
+#mobileCenterPiece {
+	display: none;
+}
+
+/* == == == == == == == == == == == == == == == == == == ==
+MAIN
+== == == == == == == == == == == == == == == == == == == */
+
+/* == == == == == == == == == == == == == == == == == == ==
+FOOTER
+== == == == == == == == == == == == == == == == == == == */
+#footer {
+	background-color: #1c1c1c;
+	max-width: 1100px;
+	height: 55px;
+}
+
+/*.socialMediaBox {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.socialMediaBox img {
+	max-width: 50px;
+	padding: 10px 0px 10px 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.socialMediaBox img:hover {
+	opacity: .7;
+}
+
+.mobileSocialMediaBox {
+	display: none;
+}*/
+
+/* == == == == == == == == == == == == == == == == == == ==
+BREAKPOINTS
+== == == == == == == == == == == == == == == == == == == */
+@media only screen and (max-width: 924px) {
+	/*begin formatting for mobile centerpiece*/
+	#topBox {
+		padding-bottom: 0px;
+	}
+
+	#desktopCenterPiece {
+		display: none;
+	}
+
+	#mobileCenterPiece {
+		display: block;
+	}
+
+	.mobileContactBoxHolder {
+		background-image: url("../links/wood_back_QuickFacts.jpg") !important;
+		border-style: double;
+		border-width: 0px 30px;
+		border-color: #FFFCE8;
+	}
+
+	#mobileContactBox {
+		background-color: rgba(28, 28, 28, .8);
+		height: auto;
+	}
+
+	#mobileContactBox h1 {
+		font-family: "Oswald", "Impact", sans-serif;
+		color: #FFFCE8;
+	}
+
+	.mobileInfoHolder {
+		margin-left: 20px;
+		margin-top: 15px;
+	}
+
+	.mobileInfoHolder img {
+		display: block;
+		margin: 0px auto;
+	}
+
+	.mobileInfoHolder h4 {
+		font-family: "Helvetica", sans-serif;
+		color: #FFFCE8;
+		text-align: center;
+	}
+
+	.mobileInfoHolder2 {
+		margin-left: 20px;
+		padding-bottom: 10px;
+	}
+
+	.mobileInfoHolder2 img {
+		display: block;
+		margin: 0px auto;
+	}
+
+	.mobileInfoHolder2 h4 {
+		font-family: "Helvetica", sans-serif;
+		color: #FFFCE8;
+		text-align: center;
+	}
+
+	.mobileInfoHolder2:hover {
+		opacity: .7;
+	}
+
+	.mobileBottomContact {
+		margin-bottom: 30px;
+	}
+	/*end formatting for mobile centerpiece*/
+}
+
+@media only screen and (max-width: 639px) {
+	/*For mobile nav*/
+	#desktopNav {
+		display: none;
+	}
+
+	#mobileNav {
+		display: block;
+	}
+
+	#mobileNav button {
+		padding-bottom: 2px;
+	}
+
+	.title-bar {
+		background-color: #1c1c1c;
+		height: 50px;
+	}
+
+	.title-bar a {
+		font-weight: bold;
+		color: #FFFCE8;
+	}
+
+	.title-bar button {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#example-menu {
+		background-color: #132125;
+		color: #260000;
+	}
+
+	.mobileDropdown a {
+		color: black;
+	}
+
+	.mobileDropdown a:hover {
+		background-color: #260000;
+		color: #FFFCE8;
+	}
+	/*end for mobile nav*/
+
+	.mobileInfoHolder img {
+		margin-bottom: 10px;
+	}
+
+	/*swapping desktop for mobile footer content*/
+	.socialMediaBox {
+		display: none;
+	}
+
+	.mobileSocialMediaBox {
+		display: inline-block;
+	}
+
+	.mobileSocialMediaBox img {
+		max-width: 60px;
+		margin: 10px 0px 10px 0px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.mobileSocialMediaBox img:hover {
+		opacity: .7;
+	}
+	/*end desktop mobile footer formatting*/
+
+}
