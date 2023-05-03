@@ -1,0 +1,363 @@
+@charset "UTF-8"
+
+/* == == == == == == == == == == == == == == == == == == ==
+COLORS
+	red: rgb(77, 20, 40);
+	maroon: #312327;
+	navy: #132125 OR rgb(19, 33, 37);
+	tan: #dcd9c5;
+	
+	/new colors
+	maroon: #26000; or 220000
+	cream: #FFFCE8;
+	charcoal: #1c1c1c; or 232323
+	black: #000000;
+== == == == == == == == == == == == == == == == == == == */
+
+/* == == == == == == == == == == == == == == == == == == ==
+GENERAL
+== == == == == == == == == == == == == == == == == == == */
+@font-face {
+    font-family: BebasNeue;
+    src: url("font/BebasNeue.otf") format("opentype");
+}
+
+body {
+	background-color: #260000;
+}
+
+#wrapper {
+	max-width: 1100px;
+	height: auto;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* == == == == == == == == == == == == == == == == == == ==
+NAV
+== == == == == == == == == == == == == == == == == == == */
+#topBox {
+	height: 430px;
+	background-image: url("../links/Antelope 1_PS.jpg") !important;
+	background-size: 100% 100%;
+}
+
+#nav {
+	height: 50px;
+	background-color: #1c1c1c;
+}
+
+#navLeft {
+	float: left;
+}
+
+#navLeft img {
+	margin-right: -10px;
+}
+
+#navLeft a {
+	font-family: 'BebasNeue', sans-serif;
+	font-weight: bold;
+	line-height: 50px;
+	padding-left: 15px;
+}
+
+#navRight {
+	float: right;
+	padding-right: 30px;
+}
+
+#navRight a {
+	padding-top: 17px;
+	color: #FFFCE8;
+}
+
+.desktopDropdown {
+	border-color: #FFFCE8;
+	background-color: #1c1c1c;
+}
+
+.desktopDropdown a:hover {
+	background-color: #260000;
+}
+
+#mobileNav {
+	display: none;
+}
+
+.pageTitleBox {
+	height: 350px;
+	margin-left: auto;
+	background-color: #FFFCE8;
+}
+
+.catLogo {
+	margin-top: 35px;
+}
+
+.pageTitleBox h1 {
+	font-family: "Oswald", "Impact", sans-serif;
+	font-size: 52px;
+	margin-top: 40px;
+	color: #260000;
+}
+
+.catTheme {
+	margin-top: -40px;
+}
+
+.pageIntroBox {
+	height: 350px;
+	margin-right: auto;
+	background-color: rgba(28, 28, 28, .8);
+	border-style: solid;
+	border-width: 0px 4px 4px 0px;
+	border-color: #FFFCE8;
+}
+
+.pageIntroBox h4 {
+	font-family: "Oswald", "Impact", sans-serif;
+	margin-top: 20px;
+	color: #FFFCE8;
+	font-size: 30px;
+}
+
+
+.pageIntroBox p {
+	font-family: "Helvetica", sans-serif;
+	color: #FFFCE8;
+	line-height: 1.6;
+}
+
+#mobileCenterPiece {
+	display: none;
+}
+
+/* == == == == == == == == == == == == == == == == == == ==
+MAIN
+== == == == == == == == == == == == == == == == == == == */
+#demoTitleVideo {
+	background-color: #1c1c1c;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	height: 40px;
+}
+
+#orbitCarousel {
+	padding-top: 11px;
+	background-color: #260000;
+	border-style: double;
+	border-width: 0px 15px;
+	border-color: #FFFCE8;
+}
+
+.videoCellBox figcaption {
+	width: auto;
+	max-width: 400px;
+	height: inherit;
+}
+
+.videoCellBox iframe {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 55vw;
+	height: 40vw;
+	min-height: 300px;
+	min-width: 300px;
+}
+
+.orbit-bullets {
+	background-color: #1c1c1c;
+	height: 37px;
+}
+
+/* == == == == == == == == == == == == == == == == == == ==
+FOOTER
+== == == == == == == == == == == == == == == == == == == */
+#footer {
+	background-color: #1c1c1c;
+}
+
+.contactBox {
+	font-family: "Helvetica", sans-serif;
+	padding: 20px 0px 10px 15px;
+	color: #FFFCE8;
+}
+
+.mobileContactBox {
+	display: none;
+}
+
+/*.socialMediaBox img {
+	float: right;
+	max-width: 50px;
+	margin: 9px 15px 0px 0px;
+}
+
+.socialMediaBox img:hover {
+	opacity: .7;
+}
+
+.mobileSocialMediaBox {
+	display: none;
+}*/
+
+/* == == == == == == == == == == == == == == == == == == ==
+BREAKPOINTS
+== == == == == == == == == == == == == == == == == == == */
+@media only screen and (max-width: 850px) {
+	/*begin formatting for mobile page header*/
+	#topBox {
+		height: auto;
+		background-image: url("../links/Antelope 1_PS.jpg") !important;
+	}
+
+	#centerPiece {
+		display: none;
+	}
+
+	#mobileCenterPiece {
+		display: block;
+		padding: 0px 20px 0px 20px;
+	}
+
+	.mobilePageTitleBox {
+		height: auto;
+		margin-left: auto;
+		background-color: #FFFCE8;
+	}
+
+	.catLogo {
+		max-height: 100px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+	}
+
+	.mobilePageTitleBox h1 {
+		font-family: "Oswald", "Impact", sans-serif;
+		font-size: 50px;
+		color: #260000;
+	}
+
+	.catTheme {
+		width: 300px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 20px;
+		padding-bottom: 5px;
+	}
+
+	.mobilePageIntroBox {
+		height: auto;
+		margin-right: auto;
+		background-color: rgba(28, 28, 28, .8);
+		border-style: solid;
+		border-width: 0px 4px 4px 4px;
+		border-color: #FFFCE8;
+	}
+
+	.mobilePageIntroBox h4 {
+		font-family: "Oswald", "Impact", sans-serif;
+		margin-top: 20px;
+		color: #FFFCE8
+	}
+
+
+	.mobilePageIntroBox p {
+		font-family: "Helvetica", sans-serif;
+		font-size: 18px;
+		color: #FFFCE8;
+		line-height: 1.6;
+	}
+	/*end formatting for mobile page header*/
+
+	/*begin formatting for mobile audio portfolio title boxes*/
+	.audioCellBox h5 {
+		width: inherit;
+	}
+	/*end formatting for mobile audio portfolio title boxes*/
+}
+
+@media only screen and (max-width: 639px) {
+	/*For mobile nav*/
+	#desktopNav {
+		display: none;
+	}
+
+	#mobileNav {
+		display: block;
+	}
+
+	#mobileNav button {
+		padding-bottom: 2px;
+	}
+
+	.title-bar {
+		background-color: rgba(28, 28, 28, .3);
+		height: 50px;
+	}
+
+	.title-bar a {
+		font-weight: bold;
+		color: #FFFCE8;
+	}
+
+	.title-bar button {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#example-menu {
+		background-color: #1c1c1c;
+		color: #260000;
+	}
+
+	.mobileDropdown a {
+		color: black;
+	}
+
+	.mobileDropdown a:hover {
+		background-color: #260000;
+		color: #FFFCE8;
+	}
+	/*end for mobile nav*/
+
+	.contactBox {									/*swapping desktop for mobile footer content*/
+		display: none;
+	}
+
+	.mobileContactBox {
+		display: block;
+		padding: 15px 0px 4px 15px;
+		color: #FFFCE8;
+	}
+
+	.mobileContactBox h5 {
+		font-family: "Helvetica", sans-serif;
+		color: #FFFCE8;
+		font-size: 16px;
+	}
+
+	/*.socialMediaBox {
+		display: none;
+	}
+
+	.mobileSocialMediaBox {
+		display: inline-block;
+	}
+
+	.mobileSocialMediaBox img {
+		max-width: 50px;
+		margin: 0px 7px 12px 0px;
+	}
+
+	.mobileSocialMediaBox img:hover {
+		opacity: .7;
+	}*/
+	/*end desktop mobile footer formatting*/
+}
